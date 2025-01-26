@@ -1,0 +1,314 @@
+body {
+    min-height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    background: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    font-size: 100%;
+    vertical-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header img
+{
+    height: 32px;
+}
+
+header .kieli {
+    display: flex;
+    gap: 10px;
+}
+
+.kieli a {
+    height: 32px;
+}
+
+.kieli .kieli-icon {
+    max-height: 100%; max-width:100%;
+}
+
+.banner {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Suomalainen_Rautatie_Korialla.jpg') no-repeat center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    
+    padding: 50px 20px;
+    height: calc(50vw);
+    width: 100%;
+
+}
+
+.banner h1 {
+    font-family: sans-serif;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search {
+    background-color: #333;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    outline: none;
+}
+
+.switch {
+    background-color: #2c7b7b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch:hover {
+    background-color: #1f5e5e;
+}
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+.content h1 {
+    color: #1f5e5e;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #001c1c;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+footer small {
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+    }
+
+    header nav {
+        justify-content: center;
+        width: 50%;
+        gap: 10px;
+        vertical-align: center;
+
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        font-size: 100%;
+    }
+
+    .content h2 {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+.container {
+    display: flex;
+    padding: 64px;
+    align-content: center;
+}
+
+.image {
+    max-width: 50%;
+    height: 50%;
+    align-items: center;
+    padding: 10px;
+}
+
+.image img {
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height:100%; max-width:100%;
+
+}
+
+.content {
+    max-width: 50%;
+    margin: 16px;
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 30px 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.2rem;
+    }
+
+    .search-buttons {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .container {
+        display: inline;
+        width: 100vw;
+    }
+    
+    .content {
+        padding: 0px;
+        width: 100vw;
+        max-width: 75%;
+
+    }
+    .content h1 {
+        font-size: 1.9rem;
+    }
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .search {
+        font-size: 100%;
+        font-weight: bold;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        width: 30%;
+        outline: none;
+    }
+
+    header .kieli {
+        display: flex;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .image {
+        max-width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+    
+    .image img {
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-height:100%; max-width:100%;
+    }
+
+    .content {
+        margin: 4px;
+        padding: 0%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        align-items: center;
+    }
+
+    .image img {
+        max-height:100%; max-width:100%;
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 16px;
+    }
+
+    header nav {
+        padding-top: 3.1%;
+        font-size: 50%;
+    }
+}
